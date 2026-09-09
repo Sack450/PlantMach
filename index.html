@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>PlantMatch - Inteligencia Botánica y Compatibilidad</title>
+  
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;700&amp;family=Karla:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Estilos base personalizados -->
+  <link rel="stylesheet" href="css/styles.css"/>
+  
+  <!-- Tailwind CSS CDN y Configuración Personalizada -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+  
+  <!-- Lógica de Aplicación -->
+  <script src="js/app.js" defer></script>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="PlantMatch Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAURKa87-HTnGcN3RvYd9-3vGd3NWpcPRrAaxbh81Lfugt1ZCjyRYmLTtiKeIcYWe8-ggUzWL8UeRBfPVRU1iGY-BYHcpzJpqzETjRct1VKUv2FZypJr5oI0NsHJaM5Q8IjjRuyQCA8J82DNMPR6u284AfWECJ0id21hieFHKc7MVOlmWLqD7jAbAk6AGjzsrhqELqAt-5STCcsxSuI2iuyBNFIcrQ-KwqfhNLHCul_nd_e34SyAQnZFQ"/><span class="font-headline-sm text-headline-sm text-secondary tracking-tight">PlantMatch</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-secondary-container text-on-secondary-container font-label-md text-label-md rounded-full px-space-md py-space-xs"><a aria-current="page" class="transition-colors bg-secondary-container text-on-secondary-container font-label-md text-label-md rounded-full px-space-md py-space-xs" data-path="inicio" href="#">Inicio</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="evaluador" href="#">Evaluador Inteligente</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalogo-de-plantas" href="#">Catálogo de Plantas</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="guia-de-cuidados" href="#">Guía de Cuidados</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md rounded-full px-space-lg py-space-sm shadow-[0_4px_20px_-2px_rgba(27,67,50,0.05)] hover:bg-primary-container hover:text-on-primary-container transition-all" data-path="evaluador-inteligente" href="#">Evaluar mi Casa</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section id="inicio" class="relative w-full px-margin-mobile lg:px-margin-desktop pt-space-xl pb-space-3xl overflow-hidden"></section><!-- Ambient Organic Background Shapes -->
+<div class="absolute -top-24 right-0 w-[550px] h-[550px] bg-secondary-container/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 -left-48 w-[450px] h-[450px] bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+<!-- Eyebrow Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-2xs rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider mb-space-lg shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">eco</span>
+<span>Algoritmo de Compatibilidad Botánica 2.4</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-headline-xl text-headline-xl text-on-surface max-w-4xl tracking-tight leading-[1.08] mb-space-md">
+        Encuentra las plantas perfectas para las <span class="text-primary underline decoration-primary-container decoration-wavy decoration-2 underline-offset-8">condiciones reales</span> de tu casa
+      </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-2xl">
+        Evalúa tu clima local, horas de sol, humedad y mascotas para recibir recomendaciones garantizadas con porcentaje científico de adaptabilidad para que nunca más se te muera una planta.
+      </p>
+<!-- Primary Action & Search Module -->
+<div class="w-full max-w-3xl bg-surface-container-lowest rounded-full p-space-xs shadow-[0_12px_32px_-4px_rgba(27,67,50,0.08)] flex flex-col sm:flex-row items-center gap-space-xs mb-space-lg">
+<div class="flex items-center gap-space-sm pl-space-md flex-1 w-full sm:w-auto">
+<span class="material-symbols-outlined text-outline text-[22px]">search</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline outline-none py-space-xs" id="plantQuickSearch" placeholder="Busca por nombre (ej. Monstera, Ficus, Pothos)..." type="text"/>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-primary text-on-primary font-label-md text-label-md px-space-xl py-space-sm rounded-full hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm whitespace-nowrap" href="#evaluador">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+<span>Comenzar Test de mi Casa</span>
+</a>
+</div>
+<!-- Quick Filter Chips -->
+<div class="flex flex-wrap items-center justify-center gap-space-xs max-w-2xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-space-2xs uppercase tracking-wider">Filtros rápidos:</span>
+<button class="quick-chip inline-flex items-center gap-1.5 px-space-md py-space-2xs rounded-full bg-surface-container-high text-on-surface hover:bg-secondary-container hover:text-on-secondary-container font-label-sm text-label-sm transition-all shadow-sm" data-category="pets" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">pets</span>
+<span>Pet-friendly (No tóxicas)</span>
+</button>
+<button class="quick-chip inline-flex items-center gap-1.5 px-space-md py-space-2xs rounded-full bg-surface-container-high text-on-surface hover:bg-secondary-container hover:text-on-secondary-container font-label-sm text-label-sm transition-all shadow-sm" data-category="lowlight" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">wb_twilight</span>
+<span>Poca luz</span>
+</button>
+<button class="quick-chip inline-flex items-center gap-1.5 px-space-md py-space-2xs rounded-full bg-surface-container-high text-on-surface hover:bg-secondary-container hover:text-on-secondary-container font-label-sm text-label-sm transition-all shadow-sm" data-category="beginner" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+<span>Principiantes</span>
+</button>
+<button class="quick-chip inline-flex items-center gap-1.5 px-space-md py-space-2xs rounded-full bg-surface-container-high text-on-surface hover:bg-secondary-container hover:text-on-secondary-container font-label-sm text-label-sm transition-all shadow-sm" data-category="air" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">air</span>
+<span>Purificadoras de aire</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Space Diagnostic Widget -->
+<section class="w-full px-margin-mobile lg:px-margin-desktop py-space-2xl bg-surface-container-low" id="evaluador">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">Diagnóstico Ambiental en Vivo</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-2xs">Configura las condiciones de tu hogar</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-space-2xs">Modifica los parámetros ambientales. Nuestro motor recalcula automáticamente la compatibilidad biometeorológica.</p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-lg py-space-xs rounded-full shadow-sm">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-tertiary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface"><span id="matchCounter">14</span> especies compatibles</span>
+</div>
+</div>
+<!-- Multi-parameter Control Deck -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg lg:p-space-2xl shadow-[0_4px_20px_-2px_rgba(27,67,50,0.05)]">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-xl">
+<!-- Selector 1: Zona Climática -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">cloud</span>
+<span>1. Clima y Zona Geográfica</span>
+</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Temperatura ambiente típica estacional</p>
+<div class="relative mt-space-2xs">
+<select class="w-full appearance-none bg-surface-container rounded-full px-space-lg py-space-sm font-body-md text-body-md text-on-surface outline-none cursor-pointer focus:bg-surface-container-high transition-colors pr-10" id="climateSelect">
+<option value="oceanic">Templado oceánico (14-22°C)</option>
+<option selected="" value="mediterranean">Mediterráneo seco (18-30°C)</option>
+<option value="continental">Continental frío (8-26°C)</option>
+<option value="tropical">Tropical húmedo (22-34°C)</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Selector 2: Orientación y Luz -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">wb_sunny</span>
+<span>2. Orientación y Tipo de Luz</span>
+</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ventana más próxima al espacio</p>
+<div class="relative mt-space-2xs">
+<select class="w-full appearance-none bg-surface-container rounded-full px-space-lg py-space-sm font-body-md text-body-md text-on-surface outline-none cursor-pointer focus:bg-surface-container-high transition-colors pr-10" id="lightSelect">
+<option selected="" value="bright-indirect">Luz indirecta brillante (Ventana Este / Sur tamizada)</option>
+<option value="direct-sun">Sol directo intenso (Ventana Sur abierta 5h+)</option>
+<option value="low-light">Luz indirecta suave / Poca luz (Ventana Norte)</option>
+<option value="artificial">Sin ventanas / Luz artificial de oficina</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Selector 3: Humedad & Ventilación -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">humidity_mid</span>
+<span>3. Nivel de Humedad Ambiental</span>
+</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Influencia de calefacción o zonas húmedas</p>
+<div class="relative mt-space-2xs">
+<select class="w-full appearance-none bg-surface-container rounded-full px-space-lg py-space-sm font-body-md text-body-md text-on-surface outline-none cursor-pointer focus:bg-surface-container-high transition-colors pr-10" id="humiditySelect">
+<option selected="" value="medium">Media estándar (40% - 60%)</option>
+<option value="low">Baja / Calefacción ó aire seco (&lt;35%)</option>
+<option value="high">Alta / Baño o invernadero (&gt;65%)</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Selector 4: Mascotas en casa -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">pets</span>
+<span>4. Seguridad para Mascotas</span>
+</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Protección contra plantas tóxicas para perros y gatos</p>
+<div class="flex items-center justify-between bg-surface-container rounded-full px-space-lg py-space-sm mt-space-2xs">
+<span class="font-body-md text-body-md text-on-surface font-semibold" id="petToggleLabel">Solo 100% No Tóxicas</span>
+<button aria-checked="true" class="w-12 h-6 bg-tertiary rounded-full relative p-0.5 transition-colors" id="petToggleBtn" role="switch" type="button">
+<span class="block w-5 h-5 bg-surface-container-lowest rounded-full shadow-sm translate-x-6 transition-transform" id="petToggleKnob"></span>
+</button>
+</div>
+</div>
+<!-- Selector 5: Frecuencia de Riego Dedicable -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">water_drop</span>
+<span>5. Frecuencia de Riego</span>
+</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant">¿Cuánto tiempo puedes dedicarle?</p>
+<div class="relative mt-space-2xs">
+<select class="w-full appearance-none bg-surface-container rounded-full px-space-lg py-space-sm font-body-md text-body-md text-on-surface outline-none cursor-pointer focus:bg-surface-container-high transition-colors pr-10" id="wateringSelect">
+<option selected="" value="weekly">Semanal (1 vez por semana)</option>
+<option value="biweekly">Quincenal (Cada 10 - 15 días)</option>
+<option value="rarely">Olvidadizo / Muy resistente (1 vez al mes)</option>
+<option value="frequent">Frecuente / Gran dedicación (2-3 veces por semana)</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- CTA Trigger Box -->
+<div class="flex flex-col justify-end">
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md rounded-full py-space-md px-space-lg flex items-center justify-center gap-space-xs hover:bg-primary-container hover:text-on-primary-container transition-all shadow-[0_4px_20px_-2px_rgba(154,68,45,0.25)]" id="calculateBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+<span>Calcular compatibilidad (14 especies)</span>
+</button>
+</div>
+</div>
+<!-- Metric Indicator Ribbon -->
+<div class="mt-space-xl pt-space-md flex flex-wrap items-center justify-between gap-space-md bg-surface-container-high/60 rounded-xl px-space-lg py-space-sm text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">health_and_safety</span>
+<span class="font-body-sm text-body-sm">Filtro de oxigenación pasiva activo</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">thermostat</span>
+<span class="font-body-sm text-body-sm">Rango de confort térmico: 18°C - 26°C</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">history_toggle_off</span>
+<span class="font-body-sm text-body-sm">Actualizado con fotoperiodo estacional</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dynamic Catalog Section (% Match Results) -->
+ <section id="catalogo-de-plantas" class="w-full px-margin-mobile lg:px-margin-desktop py-space-3xl">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header with Sorting -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Catálogo Asistido por Inteligencia Botánica</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-2xs">Recomendaciones óptimas para tu espacio</h2>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Ordenado por:</span>
+<span class="font-semibold bg-surface-container px-space-md py-space-2xs rounded-full">Mayor % de compatibilidad</span>
+</div>
+</div>
+<!-- Plants Grid (6 Rich Botanical Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop" id="plantGrid">
+<!-- Card 1: Sansevieria Trifasciata -->
+<div class="plant-card bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_20px_-2px_rgba(27,67,50,0.05)] transition-all duration-300 hover:shadow-[0_12px_32px_-4px_rgba(27,67,50,0.12)] hover:-translate-y-1 flex flex-col" data-diff="Principiante" data-light="low-light" data-pet="caution">
+<div class="relative h-64 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Vibrant studio photograph of a thriving Sansevieria trifasciata snake plant in a modern cylindrical terracotta ceramic planter, natural gentle daylight casting soft architectural shadows on warm cream stucco wall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEeW5FA6fFfqma3n_jeAEyQjIrw5SYi542ijvMNWuwKGYSTKwtm7R8Xo73d1zlFBVSl7znkcH-Ttmlirfv-7JmJkA2AWVgPcuLeZ86Wq8GTbHAvu2hvPDhrCarxrrSX6zhsv92iJqSpgJSqeDHMpBoBh3sG-xzdlvxHPTuaQ-XmiBBLFJgySKZBLN_TsTp1Ib_ER82pY60SGOncJ4WGOQLBLMnZ_Col2ROse0gT98aZZskcaClmpghHQ"/>
+<!-- Match Badge -->
+<div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-space-md py-space-2xs rounded-full font-label-md text-label-md flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>99% Compatible</span>
+</div>
+<!-- Pet Warning Badge -->
+<div class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">pets</span>
+<span>Precaución</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-2xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sansevieria Trifasciata</h3>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container">Fácil</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-space-md">Lengua de suegra / Espada de San Jorge</p>
+<!-- Condition Matrix -->
+<div class="grid grid-cols-3 gap-space-xs p-space-sm rounded-xl bg-surface-container-low mb-space-lg text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[18px] mb-0.5">wb_sunny</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Baja a Intensa</span>
+<span class="text-[11px] text-on-surface-variant">Muy adaptable</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[18px] mb-0.5">water_drop</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">1x / Mes</span>
+<span class="text-[11px] text-on-surface-variant">Dejar secar</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-tertiary text-[18px] mb-0.5">air</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Purificadora</span>
+<span class="text-[11px] text-on-surface-variant">Filtra toxinas</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">¡Casi indestructible!</span>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container transition-colors" type="button">
+<span>Ver ficha</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Monstera Deliciosa -->
+<div class="plant-card bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_20px_-2px_rgba(27,67,50,0.05)] transition-all duration-300 hover:shadow-[0_12px_32px_-4px_rgba(27,67,50,0.12)] hover:-translate-y-1 flex flex-col" data-diff="Media" data-light="bright-indirect" data-pet="caution">
+<div class="relative h-64 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Lush Monstera deliciosa Swiss cheese plant with large fenestrated emerald leaves sitting in an artisanal cream speckled ceramic pot bathed in gentle indirect morning sunlight inside a minimalist interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMWUJdDao6E1fC_7FkwdpW3FXe4zfte8RMlFDPN7QVQXSOiQE5pyFofP3JYhqWiLo7JX10eQJwEMLc4rmEz2wCsGjmRyEAscPqZcRNWkL-BGlJoMBQcaQL3aFXws5puEpTRWEj0hccbZoLudH36WazKlOp_s8DpyzTLEKLa2lb-ZB5dlJyoq2pldteyZncHBeY3uypufHR0x2SuoLbpgS8H5rROXdo-Rf0irO8VjxgarIIf1NNiZhiCQ"/>
+<div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-space-md py-space-2xs rounded-full font-label-md text-label-md flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>98% Compatible</span>
+</div>
+<div class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">pets</span>
+<span>Precaución</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-2xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Monstera Deliciosa</h3>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container">Media</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-space-md">Costilla de Adán</p>
+<!-- Condition Matrix -->
+<div class="grid grid-cols-3 gap-space-xs p-space-sm rounded-xl bg-surface-container-low mb-space-lg text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[18px] mb-0.5">wb_sunny</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Luz Indirecta</span>
+<span class="text-[11px] text-on-surface-variant">Brillante</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[18px] mb-0.5">water_drop</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Semanal</span>
+<span class="text-[11px] text-on-surface-variant">Sustrato semi-húmedo</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-tertiary text-[18px] mb-0.5">humidity_mid</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Humedad 50%+</span>
+<span class="text-[11px] text-on-surface-variant">Pulverizar hojas</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Óptima para tu salón</span>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container transition-colors" type="button">
+<span>Ver ficha</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Pothos Dorado (Epipremnum aureum) -->
+<div class="plant-card bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_20px_-2px_rgba(27,67,50,0.05)] transition-all duration-300 hover:shadow-[0_12px_32px_-4px_rgba(27,67,50,0.12)] hover:-translate-y-1 flex flex-col" data-diff="Principiante" data-light="bright-indirect" data-pet="caution">
+<div class="relative h-64 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Trailing Golden Pothos vine cascading gracefully from a terracotta shelf planter with variegated yellow and bright green glossy heart leaves against a soft beige warm wall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvdHYrnlkFBLWUqdWjGQu5vQCffMjc9GB3a01RSjlcajHL-XAeVNA3h825aPUOhcJ4rXSgdyTK3oIuWvZX2o-JzG9JUyLZx6w1mSE4oopoJl0Oo-bxlSXuwSjGBGK3x4EHFJ18p3Zm5Dd5Iv7YHj_SQKaWkJvjv6b8ZX4JZjvzEwIddbVbkrk25y8-i5_n0uEeA2oyp1NOlzPLO6fkthy6YwFLjG1Bg8RDOdrGyHSLwoEoaQVDCTbVSA"/>
+<div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-space-md py-space-2xs rounded-full font-label-md text-label-md flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>95% Compatible</span>
+</div>
+<div class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">pets</span>
+<span>Precaución</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-2xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pothos Dorado</h3>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container">Muy fácil</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-space-md">Epipremnum aureum</p>
+<!-- Condition Matrix -->
+<div class="grid grid-cols-3 gap-space-xs p-space-sm rounded-xl bg-surface-container-low mb-space-lg text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[18px] mb-0.5">wb_sunny</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Tolerante</span>
+<span class="text-[11px] text-on-surface-variant">Luz media a baja</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[18px] mb-0.5">water_drop</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Cada 7-10d</span>
+<span class="text-[11px] text-on-surface-variant">Resiste olvidos</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-tertiary text-[18px] mb-0.5">air</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Purificadora</span>
+<span class="text-[11px] text-on-surface-variant">Crecimiento veloz</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Ideal estanterías y colgantes</span>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container transition-colors" type="button">
+<span>Ver ficha</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4: Calathea Orbifolia (Pet Friendly) -->
+<div class="plant-card bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_20px_-2px_rgba(27,67,50,0.05)] transition-all duration-300 hover:shadow-[0_12px_32px_-4px_rgba(27,67,50,0.12)] hover:-translate-y-1 flex flex-col" data-diff="Avanzada" data-light="bright-indirect" data-pet="friendly">
+<div class="relative h-64 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Close up of a Calathea orbifolia with wide round leaves featuring elegant silver-green striped patterns in an organic handcrafted earthy pot with warm diffuse light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4cB7zQTYRkCUZaGKyL5ViTOmLbfohW2Iswms015nAHMpij3xbmBOWcxX_bUffFL5rCN48hm5JHxSYTiJtRoUft0A56D8WiekspfNzUflO0xbm6LMpIQKz5x7umH0DvEupCrE4tMvahU_ZvKngodHuesIncMAKPVbO_PsvztHkTQGQcFXdPILE2pGvTGrHIZl1HjTEzD9ZxQnmjYiSOYiBBHE90APnL-FkmpuETSS1z-iPOOV4BF9F-A"/>
+<div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-space-md py-space-2xs rounded-full font-label-md text-label-md flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>92% Compatible</span>
+</div>
+<div class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">pets</span>
+<span>100% Pet Friendly</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-2xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Calathea Orbifolia</h3>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container">Intermedia</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-space-md">Planta de la oración geométrica</p>
+<!-- Condition Matrix -->
+<div class="grid grid-cols-3 gap-space-xs p-space-sm rounded-xl bg-surface-container-low mb-space-lg text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[18px] mb-0.5">wb_shade</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Luz Tamizada</span>
+<span class="text-[11px] text-on-surface-variant">Nunca sol directo</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[18px] mb-0.5">water_drop</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">2x / Semana</span>
+<span class="text-[11px] text-on-surface-variant">Agua filtrada</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-tertiary text-[18px] mb-0.5">humidity_high</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Humedad &gt;60%</span>
+<span class="text-[11px] text-on-surface-variant">Ama humidificador</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Segura para tus perros y gatos</span>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container transition-colors" type="button">
+<span>Ver ficha</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5: Areca Palm (Dypsis lutescens) -->
+<div class="plant-card bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_20px_-2px_rgba(27,67,50,0.05)] transition-all duration-300 hover:shadow-[0_12px_32px_-4px_rgba(27,67,50,0.12)] hover:-translate-y-1 flex flex-col" data-diff="Media" data-light="bright-indirect" data-pet="friendly">
+<div class="relative h-64 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Tall, feathery Dypsis lutescens Areca Palm in an architectural sand colored ceramic planter creating dynamic botanical shadows across a bright Scandinavian living space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoM9bZSsiDq1chAHkkWAt3N0dLuMs06A9wwHgkIczrH9Qgn72MwFNd6kSrBQ6VwlhXz4CS9PS0lDb9cb8AnqwFWR5CQ774DgjcX3qjr3KbeWaYbVQJuuXDQBP5T7wK8_HwPKC5Y3vyPMiIj32_4wrziv_2QvXII2YzYCpD85vFX_lK_GL931Nxv2c5ciwVurovxTbcHlMquqdLY1rYwnMAQCarJIL6c6dJ5yPFpvHlScPo64CRfcwb0A"/>
+<div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-space-md py-space-2xs rounded-full font-label-md text-label-md flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>91% Compatible</span>
+</div>
+<div class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">pets</span>
+<span>100% Pet Friendly</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-2xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Areca Palm</h3>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container">Media</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-space-md">Dypsis lutescens / Palmera bambú</p>
+<!-- Condition Matrix -->
+<div class="grid grid-cols-3 gap-space-xs p-space-sm rounded-xl bg-surface-container-low mb-space-lg text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[18px] mb-0.5">wb_sunny</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Mucha Luz</span>
+<span class="text-[11px] text-on-surface-variant">Indirecta suave</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[18px] mb-0.5">water_drop</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">1-2x / Semana</span>
+<span class="text-[11px] text-on-surface-variant">Buen drenaje</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-tertiary text-[18px] mb-0.5">air</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Humidificadora</span>
+<span class="text-[11px] text-on-surface-variant">Purifica xileno</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Porte escultórico y fresco</span>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container transition-colors" type="button">
+<span>Ver ficha</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 6: Maranta Leuconeura (Fascinator) -->
+<div class="plant-card bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_20px_-2px_rgba(27,67,50,0.05)] transition-all duration-300 hover:shadow-[0_12px_32px_-4px_rgba(27,67,50,0.12)] hover:-translate-y-1 flex flex-col" data-diff="Media" data-light="low-light" data-pet="friendly">
+<div class="relative h-64 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Maranta leuconeura prayer plant with intricate neon red veins and dark green patches on soft velvety oval leaves resting on a warm natural wooden desk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ErJoHd7Z3qbdiNb7kLITeNXUP3pa7ys9-IhoExg56bxjtCdx-pJipi578-y3Y9wNIW63tJYLaoMYGhO0SLc4bBwZUZ_LnwaUH-E3BX3Po-VH4Nw6AwaM42rRv2KynT9EtFP2fHT7yDrGpm1ks-jzgzGvhkRIdO-JxzAyQzNhWEixcWfXzkbUQSfi6XSxTyRQGFAf3Nek9ragShd9ORDd4iATo54dHOj2wkQNrzabS-Ow6XEp5BOvgw"/>
+<div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-space-md py-space-2xs rounded-full font-label-md text-label-md flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>89% Compatible</span>
+</div>
+<div class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">pets</span>
+<span>100% Pet Friendly</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-2xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Maranta Leuconeura</h3>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container">Media</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-space-md">Planta de la oración tricolor</p>
+<!-- Condition Matrix -->
+<div class="grid grid-cols-3 gap-space-xs p-space-sm rounded-xl bg-surface-container-low mb-space-lg text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[18px] mb-0.5">wb_twilight</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Media a Baja</span>
+<span class="text-[11px] text-on-surface-variant">Hojas móviles de noche</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[18px] mb-0.5">water_drop</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Semanal</span>
+<span class="text-[11px] text-on-surface-variant">Sustrato aireado</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-tertiary text-[18px] mb-0.5">humidity_mid</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Humedad Media</span>
+<span class="text-[11px] text-on-surface-variant">Segura felinos</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Cierra sus hojas al caer el sol</span>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container transition-colors" type="button">
+<span>Ver ficha</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-2xl text-center">
+<button class="inline-flex items-center gap-space-xs bg-surface-container-high text-on-surface font-label-md text-label-md px-space-2xl py-space-sm rounded-full hover:bg-secondary hover:text-on-secondary transition-all" type="button">
+<span>Ver las 14 plantas compatibles</span>
+<span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section: Diagnostic Survival Tool for Specific Plants -->
+<section class="w-full px-margin-mobile lg:px-margin-desktop py-space-3xl bg-secondary text-on-secondary relative overflow-hidden rounded-3xl mx-auto max-w-[calc(100%-2.5rem)] lg:max-w-[calc(100%-6rem)] my-space-xl">
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-tertiary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-2xs rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider mb-space-md">
+<span class="material-symbols-outlined text-[16px]">biotech</span>
+<span>Comprobador Quirúrgico de Supervivencia</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg tracking-tight mb-space-sm">
+        ¿Quieres una planta específica pero no sabes si sobrevivirá?
+      </h2>
+<p class="font-body-lg text-body-lg text-secondary-fixed max-w-2xl mb-space-2xl">
+        Ingresa el nombre de la especie que tienes en mente. Si las condiciones de tu casa no son óptimas, te decimos exactamente qué micro-ajuste técnico hacer (humificador, luz espectral o sustrato) para que no muera.
+      </p>
+<!-- Search & Diagnose Form -->
+<div class="w-full bg-surface-container-lowest text-on-surface rounded-2xl p-space-md md:p-space-lg shadow-xl text-left">
+<div class="flex flex-col sm:flex-row gap-space-sm mb-space-md">
+<div class="flex-1 flex items-center gap-space-sm bg-surface-container rounded-full px-space-lg py-space-sm">
+<span class="material-symbols-outlined text-outline text-[22px]">search</span>
+<input class="bg-transparent font-body-md text-body-md text-on-surface outline-none w-full font-semibold" id="targetPlantInput" placeholder="Escribe el nombre de la planta..." type="text" value="Ficus Lyrata"/>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md rounded-full px-space-xl py-space-sm hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-space-xs" id="checkSurvivalBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">troubleshoot</span>
+<span>Diagnosticar Hogar</span>
+</button>
+</div>
+<!-- Prescriptive Result Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md" id="survivalResultBox">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Ficus Lyrata</span>
+<span class="bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm px-space-sm py-0.5 rounded-full">64% Riesgo Moderado</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                En tu clima y calefacción actual, perderá hojas inferiores por shock de humedad (&lt;45%) y corrientes de aire frías.
+              </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col gap-1 w-full md:w-auto min-w-[240px]">
+<span class="font-label-sm text-label-sm uppercase text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[16px]">build_circle</span> Qué adaptar:
+            </span>
+<span class="font-body-sm text-body-sm text-on-surface">• Humidificador ultrasónico a 1 metro</span>
+<span class="font-body-sm text-body-sm text-on-surface">• Lámpara LED crecimiento 4h/día</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Care Framework & Micro-Guides -->
+ <section id="guia-de-cuidados" class="w-full px-margin-mobile lg:px-margin-desktop py-space-3xl"></section>
+<div class="text-center max-w-3xl mx-auto mb-space-2xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">Reglas de Oro Biometeorológicas</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-2xs">El método científico para no matar plantas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">El 87% de las plantas de interior mueren por exceso de riego y falta de oxigenación radicular, no por negligencia.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<!-- Step 1 -->
+<div class="bg-surface-container-low rounded-2xl p-space-xl flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm text-headline-sm mb-space-md font-bold">
+              01
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">La regla de los 2 nudillos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Nunca riegues por calendario fijo de días. Introduce tu dedo índice 4 cm en el sustrato. Si sientes frialdad y tierra pegada, espera otros 3 días.</p>
+</div>
+<div class="mt-space-lg flex items-center gap-space-xs text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">water_ph</span>
+<span>Previene la pudrición radicular</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-low rounded-2xl p-space-xl flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-headline-sm text-headline-sm mb-space-md font-bold">
+              02
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Lux ≠ Ilusión Humana</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Nuestros ojos se adaptan a la penumbra artificial. A 3 metros de una ventana, la intensidad fotosintética decae más del 70%. Mide tus lux reales con el evaluador.</p>
+</div>
+<div class="mt-space-lg flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">wb_twilight</span>
+<span>Evita la etiolación y caída</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-low rounded-2xl p-space-xl flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-headline-sm text-headline-sm mb-space-md font-bold">
+              03
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Sustratos porosos activos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">La tierra de supermercado universal asfixia las raíces de interior. Mezcla 30% corteza de pino, 20% perlita y 50% fibra de coco para asegurar oxígeno.</p>
+</div>
+<div class="mt-space-lg flex items-center gap-space-xs text-tertiary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">filter_vintage</span>
+<span>Aireación molecular óptima</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof / Testimonials -->
+<section class="w-full px-margin-mobile lg:px-margin-desktop py-space-2xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">Historias de Éxito Real</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-2xs">De "mata-plantas seriales" a selvas vivas</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<!-- Review 1 -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-md">
+              "Maté cuatro Ficus en dos años pensando que era mala suerte. El evaluador de PlantMatch me señaló que la orientación norte de mi salón requería una Sansevieria o Calathea. Llevan 8 meses impecables."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-md">
+              MR
+            </div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Martina Ríos</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Piso interior en Madrid • 6 plantas vivas</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-md">
+              "Tengo dos gatos muy curiosos y siempre temía intoxicaciones. El filtro Pet-Friendly me descubrió la Areca Palm y la Maranta. Mi casa parece un botánico y duermo con total tranquilidad."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-bold text-label-md">
+              DC
+            </div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Diego Carrasco</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dueño de 2 felinos • Valencia</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-md">
+              "La comprobación por planta me salvó antes de gastar 80€ en un vivero. Me indicaron que mi calefacción secaba el aire y compré un plato con guijarros húmedos antes de traerla. Cero pérdidas."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-label-md">
+              SL
+            </div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Sofía Larraín</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Apartamento luminoso • Santiago</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Sticky Assessment CTA -->
+<section class="w-full px-margin-mobile lg:px-margin-desktop py-space-3xl">
+<div class="max-w-5xl mx-auto bg-surface-container-high rounded-3xl p-space-xl lg:p-space-2xl flex flex-col md:flex-row items-center justify-between gap-space-xl shadow-md">
+<div class="max-w-xl text-center md:text-left">
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mb-space-xs">¿Listo para diagnosticar una habitación diferente?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Guarda perfiles independientes para tu salón, baño, dormitorio o terraza techada.</p>
+</div>
+<a class="bg-primary text-on-primary font-label-md text-label-md px-space-xl py-space-md rounded-full hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md whitespace-nowrap flex items-center gap-2" href="#evaluador">
+<span class="material-symbols-outlined text-[20px]">room_preferences</span>
+<span>Ajustar Evaluador Ahora</span>
+</a>
+</div>
+</section>
+
+</div></main><footer class="w-full bg-surface-container-low mt-space-3xl"><div class="w-full px-margin-mobile lg:px-margin-desktop py-space-3xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop"><div class="lg:col-span-4 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="PlantMatch Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAURKa87-HTnGcN3RvYd9-3vGd3NWpcPRrAaxbh81Lfugt1ZCjyRYmLTtiKeIcYWe8-ggUzWL8UeRBfPVRU1iGY-BYHcpzJpqzETjRct1VKUv2FZypJr5oI0NsHJaM5Q8IjjRuyQCA8J82DNMPR6u284AfWECJ0id21hieFHKc7MVOlmWLqD7jAbAk6AGjzsrhqELqAt-5STCcsxSuI2iuyBNFIcrQ-KwqfhNLHCul_nd_e34SyAQnZFQ"/><span class="font-headline-sm text-headline-sm text-secondary">PlantMatch</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Inteligencia botánica y diagnóstico ambiental adaptado a tu hogar, mascotas y nivel de experiencia. Cultiva bienestar con precisión natural.</p></div><div class="lg:col-span-2 flex flex-col gap-space-xs"><h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-space-xs">Explorar</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalogo-de-plantas" href="#">Catálogo Completo</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="evaluador-inteligente" href="#">Diagnóstico de Luz</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="guia-de-cuidados" href="#">Plantas Pet-Friendly</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="guia-de-cuidados" href="#">Calendario de Riego</a></div><div class="lg:col-span-2 flex flex-col gap-space-xs"><h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-space-xs">Recursos</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="guia-de-cuidados" href="#">Guía de Humedad</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="guia-de-cuidados" href="#">Control de Plagas</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="guia-de-cuidados" href="#">Sustratos Orgánicos</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="#">Comunidad Botánica</a></div><div class="lg:col-span-4 flex flex-col gap-space-sm"><h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Newsletter Verde</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Recibe diagnósticos quincenales de temporada, consejos de fertilización y especies recomendadas.</p><div class="flex flex-col sm:flex-row gap-space-xs"><input class="flex-1 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-full px-space-md py-space-sm outline-none focus:ring-2 focus:ring-primary-container" placeholder="tu-email@ejemplo.com" type="email"/><button class="bg-secondary text-on-secondary font-label-md text-label-md rounded-full px-space-lg py-space-sm hover:bg-secondary-container hover:text-on-secondary-container transition-all" type="button">Suscribirme</button></div></div></div><div class="mt-space-2xl pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm"><p>© 2024 PlantMatch. Inteligencia botánica para tu espacio vital.</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" href="#">Privacidad</a><a class="hover:text-on-surface transition-colors" href="#">Términos</a><a class="hover:text-on-surface transition-colors" href="#">Contacto</a></div></div></div></footer></body></html>

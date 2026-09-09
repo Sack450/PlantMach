@@ -1,0 +1,182 @@
+[
+  {
+    "id": "sansevieria-trifasciata",
+    "name": "Sansevieria Trifasciata",
+    "commonName": "Lengua de suegra / Espada de San Jorge",
+    "difficulty": "Principiante",
+    "light": "low-light",
+    "humidity": "low",
+    "watering": "rarely",
+    "petSafe": false,
+    "matchPercent": 99,
+    "image": "https://images.unsplash.com/photo-1593482892290-f54927ae1bac?auto=format&fit=crop&w=800&q=80",
+    "highlights": {
+      "lightText": "Baja a Intensa",
+      "waterText": "1x / Mes",
+      "airText": "Purificadora"
+    },
+    "footerNote": "¡Casi indestructible!"
+  },
+  {
+    "id": "monstera-deliciosa",
+    "name": "Monstera Deliciosa",
+    "commonName": "Costilla de Adán",
+    "difficulty": "Media",
+    "light": "bright-indirect",
+    "humidity": "medium",
+    "watering": "weekly",
+    "petSafe": false,
+    "matchPercent": 98,
+    "image": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80",
+    "highlights": {
+      "lightText": "Luz Indirecta",
+      "waterText": "Semanal",
+      "airText": "Humedad 50%+"
+    },
+    "footerNote": "Óptima para tu salón"
+  },
+  {
+    "id": "pothos-dorado",
+    "name": "Pothos Dorado",
+    "commonName": "Epipremnum aureum",
+    "difficulty": "Muy fácil",
+    "light": "bright-indirect",
+    "humidity": "low",
+    "watering": "biweekly",
+    "petSafe": false,
+    "matchPercent": 95,
+    "image": "https://images.unsplash.com/photo-1596724803883-7c01b1b0cb68?auto=format&fit=crop&w=800&q=80",
+    "highlights": {
+      "lightText": "Tolerante",
+      "waterText": "Cada 7-10d",
+      "airText": "Purificadora"
+    },
+    "footerNote": "Ideal para estanterías"
+  },
+  {
+    "id": "calathea-orbifolia",
+    "name": "Calathea Orbifolia",
+    "commonName": "Planta de la oración geométrica",
+    "difficulty": "Intermedia",
+    "light": "bright-indirect",
+    "humidity": "high",
+    "watering": "frequent",
+    "petSafe": true,
+    "matchPercent": 92,
+    "image": "https://images.unsplash.com/photo-1620127682229-33388276e540?auto=format&fit=crop&w=800&q=80",
+    "highlights": {
+      "lightText": "Luz Tamizada",
+      "waterText": "2x / Semana",
+      "airText": "Humedad >60%"
+    },
+    "footerNote": "Segura para tus mascotas"
+  },
+  {
+    "id": "areca-palm",
+    "name": "Areca Palm",
+    "commonName": "Dypsis lutescens / Palmera bambú",
+    "difficulty": "Media",
+    "light": "bright-indirect",
+    "humidity": "medium",
+    "watering": "weekly",
+    "petSafe": true,
+    "matchPercent": 91,
+    "image": "https://images.unsplash.com/photo-1588614959060-4d144f28b207?auto=format&fit=crop&w=800&q=80",
+    "highlights": {
+      "lightText": "Mucha Luz",
+      "waterText": "1-2x / Semana",
+      "airText": "Humidificadora"
+    },
+    "footerNote": "Porte escultórico y fresco"
+  },
+  {
+    "id": "maranta-leuconeura",
+    "name": "Maranta Leuconeura",
+    "commonName": "Planta de la oración tricolor",
+    "difficulty": "Media",
+    "light": "low-light",
+    "humidity": "medium",
+    "watering": "weekly",
+    "petSafe": true,
+    "matchPercent": 89,
+    "image": "https://images.unsplash.com/photo-1612363148951-15f16817648f?auto=format&fit=crop&w=800&q=80",
+    "highlights": {
+      "lightText": "Media a Baja",
+      "waterText": "Semanal",
+      "airText": "Humedad Media"
+    },
+    "footerNote": "Cierra sus hojas de noche"
+  },
+  {
+    "id": "peperomia-obtusifolia",
+    "name": "Peperomia Obtusifolia",
+    "commonName": "Planta de la cuchara",
+    "difficulty": "Fácil",
+    "light": "bright-indirect",
+    "humidity": "medium",
+    "watering": "biweekly",
+    "petSafe": true,
+    "matchPercent": 96,
+    "image": "https://images.unsplash.com/photo-1616690248297-1521235eb3e8?auto=format&fit=crop&w=800&q=80",
+    "highlights": {
+      "lightText": "Luz Indirecta",
+      "waterText": "Cada 10 días",
+      "airText": "Resistente"
+    },
+    "footerNote": "Hojas carnosas y compactas"
+  },
+  {
+    "id": "zamioculcas-zamiifolia",
+    "name": "ZZ Plant",
+    "commonName": "Zamioculcas zamiifolia",
+    "difficulty": "Principiante",
+    "light": "low-light",
+    "humidity": "low",
+    "watering": "rarely",
+    "petSafe": false,
+    "matchPercent": 97,
+    "image": "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?auto=format&fit=crop&w=800&q=80",
+    "highlights": {
+      "lightText": "Poca Luz",
+      "waterText": "1x / Mes",
+      "airText": "Resistente"
+    },
+    "footerNote": "Ideal para rincones u oficinas"
+  },
+  {
+    "id": "ficus-lyrata",
+    "name": "Ficus Lyrata",
+    "commonName": "Higuera de hojas de violín",
+    "difficulty": "Avanzada",
+    "light": "direct-sun",
+    "humidity": "high",
+    "watering": "weekly",
+    "petSafe": false,
+    "matchPercent": 75,
+    "image": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80",
+    "highlights": {
+      "lightText": "Sol Directo / Abundante",
+      "waterText": "Semanal",
+      "airText": "Sensible a cambios"
+    },
+    "footerNote": "Requiere paciencia y buena luz"
+  },
+  {
+    "id": "helenium-calathea",
+    "name": "Cinta / Malamadre",
+    "commonName": "Chlorophytum comosum",
+    "difficulty": "Principiante",
+    "light": "bright-indirect",
+    "humidity": "medium",
+    "watering": "weekly",
+    "petSafe": true,
+    "matchPercent": 94,
+    "image": "https://images.unsplash.com/photo-1572688484438-313a6e50c333?auto=format&fit=crop&w=800&q=80",
+    "highlights": {
+      "lightText": "Luz Brillante",
+      "waterText": "1x / Semana",
+      "airText": "Purificadora"
+    },
+    "footerNote": "Produce hijuelos fácilmente"
+  }
+]
