@@ -1,0 +1,25 @@
+/* 
+ * Estilos base personalizados y utilidades de renderizado para PlantMatch.
+ * Se define la capa base para deshabilitar márgenes por defecto y ajustar el comportamiento del scroll.
+ */
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Ocultar barra de desplazamiento predeterminada para lograr un acabado visual limpio y moderno */
+::-webkit-scrollbar {
+  display: none;
+}
