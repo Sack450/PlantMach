@@ -5,12 +5,16 @@
     "commonName": "Lengua de suegra / Espada de San Jorge",
     "difficulty": "Principiante",
     "type": "interior",
-    "climates": ["oceanic", "mediterranean", "continental", "tropical"],
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "low-light",
     "humidity": "low",
     "watering": "rarely",
     "petSafe": false,
-    "matchPercent": 99,
     "image": "https://images.unsplash.com/photo-1593482892290-f54927ae1bac?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Baja a Intensa",
@@ -25,12 +29,16 @@
     "commonName": "Costilla de Adán",
     "difficulty": "Media",
     "type": "interior",
-    "climates": ["oceanic", "mediterranean", "continental", "tropical"],
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "bright-indirect",
     "humidity": "medium",
     "watering": "weekly",
     "petSafe": false,
-    "matchPercent": 98,
     "image": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Luz Indirecta",
@@ -45,12 +53,16 @@
     "commonName": "Epipremnum aureum",
     "difficulty": "Muy fácil",
     "type": "interior",
-    "climates": ["oceanic", "mediterranean", "continental", "tropical"],
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "bright-indirect",
     "humidity": "low",
     "watering": "biweekly",
     "petSafe": false,
-    "matchPercent": 95,
     "image": "https://images.unsplash.com/photo-1596724803883-7c01b1b0cb68?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Tolerante",
@@ -65,12 +77,16 @@
     "commonName": "Planta de la oración geométrica",
     "difficulty": "Intermedia",
     "type": "interior",
-    "climates": ["oceanic", "mediterranean", "continental", "tropical"],
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "bright-indirect",
     "humidity": "high",
     "watering": "frequent",
     "petSafe": true,
-    "matchPercent": 92,
     "image": "https://images.unsplash.com/photo-1620127682229-33388276e540?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Luz Tamizada",
@@ -85,12 +101,16 @@
     "commonName": "Dypsis lutescens / Palmera bambú",
     "difficulty": "Media",
     "type": "interior",
-    "climates": ["oceanic", "mediterranean", "continental", "tropical"],
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "bright-indirect",
     "humidity": "medium",
     "watering": "weekly",
     "petSafe": true,
-    "matchPercent": 91,
     "image": "https://images.unsplash.com/photo-1588614959060-4d144f28b207?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Mucha Luz",
@@ -105,12 +125,16 @@
     "commonName": "Planta de la oración tricolor",
     "difficulty": "Media",
     "type": "interior",
-    "climates": ["oceanic", "mediterranean", "continental", "tropical"],
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "low-light",
     "humidity": "medium",
     "watering": "weekly",
     "petSafe": true,
-    "matchPercent": 89,
     "image": "https://images.unsplash.com/photo-1612363148951-15f16817648f?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Media a Baja",
@@ -125,12 +149,16 @@
     "commonName": "Planta de la cuchara",
     "difficulty": "Fácil",
     "type": "interior",
-    "climates": ["oceanic", "mediterranean", "continental", "tropical"],
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "bright-indirect",
     "humidity": "medium",
     "watering": "biweekly",
     "petSafe": true,
-    "matchPercent": 96,
     "image": "https://images.unsplash.com/photo-1616690248297-1521235eb3e8?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Luz Indirecta",
@@ -145,12 +173,16 @@
     "commonName": "Zamioculcas zamiifolia",
     "difficulty": "Principiante",
     "type": "interior",
-    "climates": ["oceanic", "mediterranean", "continental", "tropical"],
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "low-light",
     "humidity": "low",
     "watering": "rarely",
     "petSafe": false,
-    "matchPercent": 97,
     "image": "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Poca Luz",
@@ -165,12 +197,16 @@
     "commonName": "Higuera de hojas de violín",
     "difficulty": "Avanzada",
     "type": "interior",
-    "climates": ["oceanic", "mediterranean", "continental", "tropical"],
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "direct-sun",
     "humidity": "high",
     "watering": "weekly",
     "petSafe": false,
-    "matchPercent": 75,
     "image": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Sol Directo / Abundante",
@@ -185,12 +221,16 @@
     "commonName": "Chlorophytum comosum",
     "difficulty": "Principiante",
     "type": "interior",
-    "climates": ["oceanic", "mediterranean", "continental", "tropical"],
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "bright-indirect",
     "humidity": "medium",
     "watering": "weekly",
     "petSafe": true,
-    "matchPercent": 94,
     "image": "https://images.unsplash.com/photo-1572688484438-313a6e50c333?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Luz Brillante",
@@ -205,12 +245,14 @@
     "commonName": "Lavandula angustifolia",
     "difficulty": "Fácil",
     "type": "exterior",
-    "climates": ["mediterranean", "oceanic"],
+    "climates": [
+      "mediterranean",
+      "oceanic"
+    ],
     "light": "direct-sun",
     "humidity": "low",
     "watering": "rarely",
     "petSafe": false,
-    "matchPercent": 90,
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Single_lavender_flower02.jpg/960px-Single_lavender_flower02.jpg",
     "highlights": {
       "lightText": "Sol Pleno",
@@ -225,12 +267,13 @@
     "commonName": "Olea europaea",
     "difficulty": "Media",
     "type": "exterior",
-    "climates": ["mediterranean"],
+    "climates": [
+      "mediterranean"
+    ],
     "light": "direct-sun",
     "humidity": "low",
     "watering": "rarely",
     "petSafe": true,
-    "matchPercent": 85,
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Olea_europaea_cuspidata-africana_Cape_Town.JPG/960px-Olea_europaea_cuspidata-africana_Cape_Town.JPG",
     "highlights": {
       "lightText": "Sol Pleno",
@@ -245,12 +288,14 @@
     "commonName": "Hydrangea macrophylla",
     "difficulty": "Media",
     "type": "exterior",
-    "climates": ["oceanic", "continental"],
+    "climates": [
+      "oceanic",
+      "continental"
+    ],
     "light": "bright-indirect",
     "humidity": "high",
     "watering": "frequent",
     "petSafe": false,
-    "matchPercent": 78,
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/%28Natural%29_Hydrangea_macrophylla%2C_Iwafune%2C_Isumi%2C_Chiba%2C_Japan_2.jpg/960px-%28Natural%29_Hydrangea_macrophylla%2C_Iwafune%2C_Isumi%2C_Chiba%2C_Japan_2.jpg",
     "highlights": {
       "lightText": "Sombra Parcial",
@@ -265,12 +310,14 @@
     "commonName": "Bougainvillea",
     "difficulty": "Fácil",
     "type": "exterior",
-    "climates": ["mediterranean", "tropical"],
+    "climates": [
+      "mediterranean",
+      "tropical"
+    ],
     "light": "direct-sun",
     "humidity": "medium",
     "watering": "rarely",
     "petSafe": true,
-    "matchPercent": 88,
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bougainvillea_closeup.jpg/960px-Bougainvillea_closeup.jpg",
     "highlights": {
       "lightText": "Sol Intenso",
@@ -285,12 +332,14 @@
     "commonName": "Acer palmatum",
     "difficulty": "Avanzada",
     "type": "exterior",
-    "climates": ["oceanic", "continental"],
+    "climates": [
+      "oceanic",
+      "continental"
+    ],
     "light": "bright-indirect",
     "humidity": "medium",
     "watering": "weekly",
     "petSafe": true,
-    "matchPercent": 80,
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Acer_palmatum0.jpg",
     "highlights": {
       "lightText": "Sombra Parcial",
@@ -305,12 +354,13 @@
     "commonName": "Hibiscus rosa-sinensis",
     "difficulty": "Media",
     "type": "exterior",
-    "climates": ["tropical"],
+    "climates": [
+      "tropical"
+    ],
     "light": "direct-sun",
     "humidity": "high",
     "watering": "frequent",
     "petSafe": true,
-    "matchPercent": 83,
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Hibiscus_Brilliant.jpg/960px-Hibiscus_Brilliant.jpg",
     "highlights": {
       "lightText": "Sol Pleno",

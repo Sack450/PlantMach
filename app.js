@@ -114,7 +114,6 @@ async function fetchExternalPlants() {
           humidity: "medium",
           watering: wateringValue,
           petSafe: true,
-          matchPercent: Math.floor(Math.random() * (98 - 75 + 1)) + 75,
           image: apiPlant.default_image.regular_url,
           highlights: {
             lightText: displayLight,
@@ -153,11 +152,6 @@ async function fetchExternalPlants() {
 
         <div class="relative h-64 w-full overflow-hidden bg-surface-container">
           <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" src="${escapeHtml(plant.image)}" alt="${escapeHtml(plant.name)}"/>
-
-          <div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-space-md py-space-2xs rounded-full font-label-md text-label-md flex items-center gap-1 shadow-md">
-            <span class="material-symbols-outlined text-[16px]">verified</span>
-            <span>${plant.matchPercent}% Compatible</span>
-          </div>
 
           <div class="absolute top-4 right-4 ${plant.petSafe ? 'bg-tertiary-container text-on-tertiary-container' : 'bg-surface-container-lowest/90 text-primary'} font-label-sm text-label-sm px-space-sm py-space-2xs rounded-full flex items-center gap-1 shadow-sm">
             <span class="material-symbols-outlined text-[14px]">pets</span>
