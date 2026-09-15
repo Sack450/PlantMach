@@ -185,7 +185,7 @@ async function fetchExternalPlants() {
 
           <div class="flex items-center justify-between pt-space-xs">
             <span class="font-body-sm text-body-sm text-on-surface font-medium">${escapeHtml(plant.footerNote || '')}</span>
-            <button class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container transition-colors" type="button">
+            <button class="view-details-btn inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container transition-colors" type="button" data-plant-id="${escapeHtml(plant.id)}">
               <span>Ver ficha</span>
               <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
             </button>
@@ -199,7 +199,87 @@ async function fetchExternalPlants() {
     plantCards = document.querySelectorAll('.plant-card');
     totalPlantsLoaded = plants.length;
     updateResultCounts(filterCards());
+
+    // Guarda los datos completos para poder mostrarlos en la ficha ("Ver ficha")
+    plantsById = {};
+    plants.forEach(p => { plantsById[p.id] = p; });
   }
+
+  // ==========================================
+  // 1.1 FICHA DE PLANTA (modal "Ver ficha")
+  // ==========================================
+  let plantsById = {};
+  const LIGHT_LABELS = {
+    'bright-indirect': 'Luz indirecta brillante',
+    'direct-sun': 'Sol directo intenso',
+    'low-light': 'Poca luz / indirecta suave',
+    'artificial': 'Luz artificial de oficina'
+  };
+  const HUMIDITY_LABELS = { 'low': 'Humedad baja (<35%)', 'medium': 'Humedad media (40-60%)', 'high': 'Humedad alta (>65%)' };
+  const WATERING_LABELS = {
+    'weekly': 'Riego semanal',
+    'biweekly': 'Riego quincenal',
+    'rarely': 'Riego muy espaciado (mensual)',
+    'frequent': 'Riego frecuente (2-3x/semana)'
+  };
+  const CLIMATE_LABELS = {
+    'oceanic': 'Templado oceánico',
+    'mediterranean': 'Mediterráneo',
+    'continental': 'Continental frío',
+    'tropical': 'Tropical húmedo'
+  };
+
+  const plantDetailModal = document.getElementById('plantDetailModal');
+  const plantDetailCloseBtn = document.getElementById('plantDetailCloseBtn');
+
+  function openPlantDetail(plantId) {
+    const plant = plantsById[plantId];
+    if (!plant || !plantDetailModal) return;
+
+    document.getElementById('plantDetailImage').src = plant.image;
+    document.getElementById('plantDetailImage').alt = plant.name;
+    document.getElementById('plantDetailName').textContent = plant.name;
+    document.getElementById('plantDetailCommonName').textContent = plant.commonName || '';
+    document.getElementById('plantDetailDifficulty').textContent = plant.difficulty || '';
+    document.getElementById('plantDetailType').textContent = plant.type === 'exterior' ? 'Exterior (jardín)' : 'Interior (maceta)';
+
+    const petEl = document.getElementById('plantDetailPet');
+    petEl.textContent = plant.petSafe ? '100% Pet Friendly' : 'Precaución con mascotas';
+    petEl.className = 'font-label-sm text-label-sm px-space-sm py-0.5 rounded-full ' +
+      (plant.petSafe ? 'bg-tertiary-container text-on-tertiary-container' : 'bg-surface-container text-on-surface');
+
+    document.getElementById('plantDetailLight').textContent = LIGHT_LABELS[plant.light] || plant.light || '—';
+    document.getElementById('plantDetailWatering').textContent = WATERING_LABELS[plant.watering] || plant.watering || '—';
+    document.getElementById('plantDetailHumidity').textContent = HUMIDITY_LABELS[plant.humidity] || plant.humidity || '—';
+
+    const climates = (plant.climates || []).map(c => CLIMATE_LABELS[c] || c);
+    document.getElementById('plantDetailClimates').textContent = climates.length ? climates.join(', ') : 'Sin datos de clima específicos.';
+
+    document.getElementById('plantDetailFooterNote').textContent = plant.footerNote || '';
+
+    plantDetailModal.classList.remove('hidden');
+    plantDetailModal.classList.add('flex');
+  }
+
+  function closePlantDetail() {
+    if (!plantDetailModal) return;
+    plantDetailModal.classList.add('hidden');
+    plantDetailModal.classList.remove('flex');
+  }
+
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.view-details-btn');
+    if (btn) openPlantDetail(btn.getAttribute('data-plant-id'));
+  });
+  if (plantDetailCloseBtn) plantDetailCloseBtn.addEventListener('click', closePlantDetail);
+  if (plantDetailModal) {
+    plantDetailModal.addEventListener('click', (e) => {
+      if (e.target === plantDetailModal) closePlantDetail();
+    });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closePlantDetail();
+  });
 
   // ==========================================
   // 2. FILTRADO Y EVALUADOR INTELIGENTE
