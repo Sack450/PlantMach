@@ -4,12 +4,18 @@
     "name": "Sansevieria Trifasciata",
     "commonName": "Lengua de suegra / Espada de San Jorge",
     "difficulty": "Principiante",
+    "type": "interior",
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "low-light",
     "humidity": "low",
     "watering": "rarely",
     "petSafe": false,
-    "matchPercent": 99,
-    "image": "https://images.unsplash.com/photo-1593482892290-f54927ae1bac?auto=format&fit=crop&w=800&q=80",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg/960px-Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg",
     "highlights": {
       "lightText": "Baja a Intensa",
       "waterText": "1x / Mes",
@@ -22,11 +28,17 @@
     "name": "Monstera Deliciosa",
     "commonName": "Costilla de Adán",
     "difficulty": "Media",
+    "type": "interior",
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "bright-indirect",
     "humidity": "medium",
     "watering": "weekly",
     "petSafe": false,
-    "matchPercent": 98,
     "image": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Luz Indirecta",
@@ -40,12 +52,18 @@
     "name": "Pothos Dorado",
     "commonName": "Epipremnum aureum",
     "difficulty": "Muy fácil",
+    "type": "interior",
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "bright-indirect",
     "humidity": "low",
     "watering": "biweekly",
     "petSafe": false,
-    "matchPercent": 95,
-    "image": "https://images.unsplash.com/photo-1596724803883-7c01b1b0cb68?auto=format&fit=crop&w=800&q=80",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Money_Plant_%28Epipremnum_aureum%29_4.jpg/960px-Money_Plant_%28Epipremnum_aureum%29_4.jpg",
     "highlights": {
       "lightText": "Tolerante",
       "waterText": "Cada 7-10d",
@@ -58,11 +76,17 @@
     "name": "Calathea Orbifolia",
     "commonName": "Planta de la oración geométrica",
     "difficulty": "Intermedia",
+    "type": "interior",
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "bright-indirect",
     "humidity": "high",
     "watering": "frequent",
     "petSafe": true,
-    "matchPercent": 92,
     "image": "https://images.unsplash.com/photo-1620127682229-33388276e540?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Luz Tamizada",
@@ -76,12 +100,18 @@
     "name": "Areca Palm",
     "commonName": "Dypsis lutescens / Palmera bambú",
     "difficulty": "Media",
+    "type": "interior",
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "bright-indirect",
     "humidity": "medium",
     "watering": "weekly",
     "petSafe": true,
-    "matchPercent": 91,
-    "image": "https://images.unsplash.com/photo-1588614959060-4d144f28b207?auto=format&fit=crop&w=800&q=80",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg/960px-%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg",
     "highlights": {
       "lightText": "Mucha Luz",
       "waterText": "1-2x / Semana",
@@ -94,11 +124,17 @@
     "name": "Maranta Leuconeura",
     "commonName": "Planta de la oración tricolor",
     "difficulty": "Media",
+    "type": "interior",
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "low-light",
     "humidity": "medium",
     "watering": "weekly",
     "petSafe": true,
-    "matchPercent": 89,
     "image": "https://images.unsplash.com/photo-1612363148951-15f16817648f?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Media a Baja",
@@ -112,12 +148,18 @@
     "name": "Peperomia Obtusifolia",
     "commonName": "Planta de la cuchara",
     "difficulty": "Fácil",
+    "type": "interior",
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "bright-indirect",
     "humidity": "medium",
     "watering": "biweekly",
     "petSafe": true,
-    "matchPercent": 96,
-    "image": "https://images.unsplash.com/photo-1616690248297-1521235eb3e8?auto=format&fit=crop&w=800&q=80",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Peperomia_obtusifolia_3-OB9.jpg/960px-Peperomia_obtusifolia_3-OB9.jpg",
     "highlights": {
       "lightText": "Luz Indirecta",
       "waterText": "Cada 10 días",
@@ -130,11 +172,17 @@
     "name": "ZZ Plant",
     "commonName": "Zamioculcas zamiifolia",
     "difficulty": "Principiante",
+    "type": "interior",
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "low-light",
     "humidity": "low",
     "watering": "rarely",
     "petSafe": false,
-    "matchPercent": 97,
     "image": "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Poca Luz",
@@ -148,11 +196,17 @@
     "name": "Ficus Lyrata",
     "commonName": "Higuera de hojas de violín",
     "difficulty": "Avanzada",
+    "type": "interior",
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "direct-sun",
     "humidity": "high",
     "watering": "weekly",
     "petSafe": false,
-    "matchPercent": 75,
     "image": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Sol Directo / Abundante",
@@ -166,11 +220,17 @@
     "name": "Cinta / Malamadre",
     "commonName": "Chlorophytum comosum",
     "difficulty": "Principiante",
+    "type": "interior",
+    "climates": [
+      "oceanic",
+      "mediterranean",
+      "continental",
+      "tropical"
+    ],
     "light": "bright-indirect",
     "humidity": "medium",
     "watering": "weekly",
     "petSafe": true,
-    "matchPercent": 94,
     "image": "https://images.unsplash.com/photo-1572688484438-313a6e50c333?auto=format&fit=crop&w=800&q=80",
     "highlights": {
       "lightText": "Luz Brillante",
@@ -178,5 +238,135 @@
       "airText": "Purificadora"
     },
     "footerNote": "Produce hijuelos fácilmente"
+  },
+  {
+    "id": "lavanda",
+    "name": "Lavanda",
+    "commonName": "Lavandula angustifolia",
+    "difficulty": "Fácil",
+    "type": "exterior",
+    "climates": [
+      "mediterranean",
+      "oceanic"
+    ],
+    "light": "direct-sun",
+    "humidity": "low",
+    "watering": "rarely",
+    "petSafe": false,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Single_lavender_flower02.jpg/960px-Single_lavender_flower02.jpg",
+    "highlights": {
+      "lightText": "Sol Pleno",
+      "waterText": "Muy espaciado",
+      "airText": "Aromática"
+    },
+    "footerNote": "Atrae polinizadores al jardín"
+  },
+  {
+    "id": "olivo",
+    "name": "Olivo",
+    "commonName": "Olea europaea",
+    "difficulty": "Media",
+    "type": "exterior",
+    "climates": [
+      "mediterranean"
+    ],
+    "light": "direct-sun",
+    "humidity": "low",
+    "watering": "rarely",
+    "petSafe": true,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Olea_europaea_cuspidata-africana_Cape_Town.JPG/960px-Olea_europaea_cuspidata-africana_Cape_Town.JPG",
+    "highlights": {
+      "lightText": "Sol Pleno",
+      "waterText": "Resiste sequía",
+      "airText": "Longevo"
+    },
+    "footerNote": "Necesita inviernos suaves, sin heladas fuertes"
+  },
+  {
+    "id": "hortensia",
+    "name": "Hortensia",
+    "commonName": "Hydrangea macrophylla",
+    "difficulty": "Media",
+    "type": "exterior",
+    "climates": [
+      "oceanic",
+      "continental"
+    ],
+    "light": "bright-indirect",
+    "humidity": "high",
+    "watering": "frequent",
+    "petSafe": false,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/%28Natural%29_Hydrangea_macrophylla%2C_Iwafune%2C_Isumi%2C_Chiba%2C_Japan_2.jpg/960px-%28Natural%29_Hydrangea_macrophylla%2C_Iwafune%2C_Isumi%2C_Chiba%2C_Japan_2.jpg",
+    "highlights": {
+      "lightText": "Sombra Parcial",
+      "waterText": "Riego frecuente",
+      "airText": "Ama la humedad"
+    },
+    "footerNote": "El color de sus flores cambia según el pH del suelo"
+  },
+  {
+    "id": "buganvilla",
+    "name": "Buganvilla",
+    "commonName": "Bougainvillea",
+    "difficulty": "Fácil",
+    "type": "exterior",
+    "climates": [
+      "mediterranean",
+      "tropical"
+    ],
+    "light": "direct-sun",
+    "humidity": "medium",
+    "watering": "rarely",
+    "petSafe": true,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bougainvillea_closeup.jpg/960px-Bougainvillea_closeup.jpg",
+    "highlights": {
+      "lightText": "Sol Intenso",
+      "waterText": "Tolera sequía",
+      "airText": "Floración vistosa"
+    },
+    "footerNote": "Ideal para muros, pérgolas y enredaderas"
+  },
+  {
+    "id": "arce-japones",
+    "name": "Arce Japonés",
+    "commonName": "Acer palmatum",
+    "difficulty": "Avanzada",
+    "type": "exterior",
+    "climates": [
+      "oceanic",
+      "continental"
+    ],
+    "light": "bright-indirect",
+    "humidity": "medium",
+    "watering": "weekly",
+    "petSafe": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Acer_palmatum0.jpg",
+    "highlights": {
+      "lightText": "Sombra Parcial",
+      "waterText": "Riego regular",
+      "airText": "Follaje otoñal"
+    },
+    "footerNote": "Necesita frío invernal para brotar bien"
+  },
+  {
+    "id": "hibisco-tropical",
+    "name": "Hibisco Tropical",
+    "commonName": "Hibiscus rosa-sinensis",
+    "difficulty": "Media",
+    "type": "exterior",
+    "climates": [
+      "tropical"
+    ],
+    "light": "direct-sun",
+    "humidity": "high",
+    "watering": "frequent",
+    "petSafe": true,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Hibiscus_Brilliant.jpg/960px-Hibiscus_Brilliant.jpg",
+    "highlights": {
+      "lightText": "Sol Pleno",
+      "waterText": "Riego frecuente",
+      "airText": "Flores todo el año"
+    },
+    "footerNote": "No tolera el frío ni las heladas"
   }
 ]
