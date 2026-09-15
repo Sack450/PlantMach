@@ -468,7 +468,7 @@ async function loadPlants() {
 }
 
 async function fetchExternalPlants() {
-  const API_KEY = 'sk-tlO66aa09c36a4c1319764'; // Deja tu clave real aquí si quieres sumar el catálogo externo de Perenual
+  const API_KEY = ''; // Deja tu clave real aquí si quieres sumar el catálogo externo de Perenual
   if (!API_KEY) return []; // Sin clave no hay nada que consultar: evita una petición fallida en cada carga
 
   const url = `https://perenual.com/api/species-list?key=${API_KEY}&indoor=1`;
